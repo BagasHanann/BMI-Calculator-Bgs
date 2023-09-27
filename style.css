@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.box {
+	width: 500px;
+	background: #fafafa;
+	border-radius: 12px;
+	text-align: center;
+	box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	color: rgba(0, 0, 0, 0.5);
+	font-weight: 600;
+	font-size: 36px;
+	padding: 30px 0;
+}
+
+.content {
+	padding: 0 30px;
+}
+
+.containerHW {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.inputW {
+	background: #fff;
+	box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+	border-radius: 12px;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.inputW label {
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.inputW input {
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #68ff60;
+	width: 50%;
+	text-align: center;
+	font-size: 28px;
+}
+
+button.calculate {
+	cursor: pointer;
+	color: #fff;
+	background: #68ff60;
+	font-size: 16px;
+	border-radius: 7px;
+	padding: 12px 0;
+	width: 100%;
+	outline: none;
+	border: none;
+	transition: all 0.5s;
+}
+
+button.calculate:hover {
+	background: #68ff60;
+}
+
+.result {
+	padding: 10px 20px;
+}
+
+.result p {
+	font-weight: 600;
+	font-size: 22px;
+	color: #000;
+	margin-bottom: 15px;
+}
+
+.result #result {
+	font-size: 36px;
+	font-weight: 900;
+	color: #68ff60;
+	background-color: #eaeaea;
+	display: inline-block;
+	padding: 7px 20px;
+	border-radius: 55px;
+	margin-bottom: 25px;
+}
+
+#comment {
+	color: #68ff60;
+	font-weight: 800;
+}
+
+.comment {
+	display: none;
+	border: dashed 1px;
+	border-radius: 7px;
+	padding: 5px;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+	padding-top: 300px;
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 600px;
+	border-radius: 10px;
+	box-shadow: #393c76 -1px 2px 2px 1px;
+}
+
+#modalText {
+	padding-top: 8px;
+	padding-right: 5px;
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+	color: rgb(24, 23, 23);
+}
+
+.modal-wrong {
+	border: 2px solid red;
+}
+
+.modal-correct {
+	border: 2px solid green;
+}
+
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.close:hover {
+	color: #d41111;
+}
